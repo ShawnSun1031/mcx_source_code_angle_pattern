@@ -156,7 +156,7 @@ class TestFunctions(unittest.TestCase):
     # check mcxlab nested output
 
     def get_first_three_digits(self, num):
-        return np.array([int(digit) for digit in str(num)[:3]])
+        return np.array([int(digit) for digit in f"{num:.10f}"[:3]])
 
     def check_outputs(self, actual, expected, path="", decimal=6):
         # Check if both items are dictionaries

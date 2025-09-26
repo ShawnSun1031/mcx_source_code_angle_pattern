@@ -1,2 +1,7 @@
+.pyc
+*.whl
+__pycache__/
+*.egg-info/
+build
 Rakefile
 *.o
